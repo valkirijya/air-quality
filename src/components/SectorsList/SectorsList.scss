@@ -29,6 +29,15 @@
             display: flex;
             align-items: center;
             margin-bottom: 30px;
+            
+
+            &:hover &-name {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: fadeIn 0.4s ease-in-out;
+            }
 
             &-name {
                 width: 100%;
@@ -41,21 +50,20 @@
 
             &-tooltip {
                 position: absolute;
-                left: 100%;
-                width: 440px;
+                left: 90%;
+                width: calc(100% - 70px);
                 pointer-events: none;
                 appearance: none;
                 background-color: #dadada;
                 padding: 16px 16px 16px 75px;
-                clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
-                //opacity: 0;
+                clip-path: polygon(100% 0, 100% 100%, 35px 100%, 0 50%, 35px 0);
                 z-index: 1;
                 animation: fadeIn 0.4s ease-in-out;
 
                 &-switched {
                     left: initial;
-                    right: 100%;
-                    clip-path: polygon(calc(100% - 75px) 0, 100% 50%, calc(100% - 75px) 100%, 0 100%, 0 0);
+                    right: 90%;
+                    clip-path: polygon(calc(100% - 35px) 0, 100% 50%, calc(100% - 35px) 100%, 0 100%, 0 0);
                     padding: 16px 75px 16px 16px;
                 }
             }

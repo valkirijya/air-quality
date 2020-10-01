@@ -22,7 +22,7 @@ const HeroBlock = ({ title, links, logos }) => {
         <div className="hero-partners">{logosImages}</div>
         <nav className="hero-navigation">{navItems}</nav>
         <h1 className="hero-title">{title}</h1>
-        <a href="#" className="hero-link">
+        <a href="#quality" className="hero-link">
           Отследить
         </a>
       </div>
