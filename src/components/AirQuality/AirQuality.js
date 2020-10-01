@@ -21,6 +21,8 @@ const AirQuality = () => {
 			center: [locationInfo.lng, locationInfo.lat],
 			zoom: locationInfo.zoom
 		});
+		map.boxZoom.enable();
+		map.scrollZoom.disable();
 	})
 	
 	return (

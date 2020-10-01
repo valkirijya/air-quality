@@ -62,4 +62,14 @@
         }
     }
 }
-
+@media (max-width: 767px) {
+    .facts {
+        &-slide {
+            &-desc {
+                margin-top: 20px;
+                font-size: 17px;
+                line-height: 20px;
+            }
+        }
+    }
+}

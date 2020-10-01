@@ -18,14 +18,19 @@ const Facts = ({ title, slides }) => {
 
   return (
     <section className="facts container">
-      <h2 className="facts-title" id="facts">{title}</h2>
+      <h2 className="facts-title" id="facts">
+        {title}
+      </h2>
       <div className="swiper-button-prev" />
       <Swiper
-        spaceBetween={40}
-        slidesPerView={3}
-        slidesPerGroup={3}
-        loop = {true}
+        spaceBetween={10}
+        slidesPerView={1}
+        slidesPerGroup={1}
+        loop={true}
         loopFillGroupWithBlank={true}
+        breakpoints={{
+          767: { spaceBetween: 40, slidesPerView: 3, slidesPerGroup: 3 },
+        }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

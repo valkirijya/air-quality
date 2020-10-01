@@ -1,23 +1,42 @@
 .air-q {
-    padding: 50px 0;
-  
+  padding: 50px 0;
+
+  &-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #fff;
+  }
+
+  &-map {
+    display: flex;
+    height: 560px;
+    margin: 42px 0;
+  }
+
+  &-text {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .air-q {
     &-title {
-      text-align: center;
-      font-weight: normal;
-      font-size: 35px;
-      line-height: 41px;
-      color: #fff;
+      line-height: 32px;
+      padding: 20px;
+      font-size: 27px;
     }
-  
     &-map {
-      height: 560px;
-      margin: 42px 0;
+      margin: 20px;
     }
-  
     &-text {
-      font-weight: normal;
-      font-size: 23px;
-      line-height: 27px;
-      color: #fff;
+      font-family: Roboto;
+      line-height: 20px;
+      padding: 20px;
+      font-size: 17px;
     }
   }
+}
